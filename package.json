@@ -12,7 +12,7 @@
     "@mdi/font": "7.0.96",
     "@vueuse/core": "^10.4.1",
     "@vueuse/integrations": "^10.4.1",
-    "axios": "^1.5.0",
+    "axios": "^1.6.2",
     "core-js": "^3.29.0",
     "cors": "^2.8.5",
     "eos-icons-vue3": "1.1.0",

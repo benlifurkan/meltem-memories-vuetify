@@ -20,8 +20,8 @@ const user = reactive({
     password: "",
   },
   register: {
-    email: "",
     phone: "",
+    email: "",
     password: "",
   },
 });
