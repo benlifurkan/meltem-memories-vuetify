@@ -22,17 +22,17 @@ onMounted(() => {
         <template #prepend>
           <VBtn
             to="/"
-            prepend-icon="mdi-needle"
+            prepend-icon="mdi-heart"
             color="error"
             variant="tonal"
             class="rounded-xl"
           >
-            <span class="text-xs">KanKa</span>
+            <span class="text-xs">Geçmiş Olsun Bal Eşim</span>
           </VBtn>
         </template>
 
         <div class="d-flex align-center">
-          <VBtn to="/" class="mr-2"> Menüler </VBtn>
+          <VBtn to="/" class="mr-2"> Ana Sayfa </VBtn>
           <VBtn to="/contact"> İletişim </VBtn>
         </div>
 
@@ -155,37 +155,19 @@ onMounted(() => {
             class="d-flex flex-wrap align-center justify-md-space-between justify-center"
           >
             <span class="d-block mt-4" style="color: #6b7280">
-              © {{ new Date().getFullYear() }} - Tüm hakları saklıdır - Hardal
+              © {{ new Date().getFullYear() }} - Tüm hakları saklıdır - KanKa
             </span>
 
             <div class="d-flex align-center gap-4 mt-4">
-              <VBtn
-                icon
-                size="small"
-                variant="text"
-                href="https://www.instagram.com/hardalburger/"
-                target="_blank"
-              >
+              <VBtn icon size="small" variant="text" href="" target="_blank">
                 <VIcon icon="mdi-instagram" />
               </VBtn>
 
-              <VBtn
-                icon
-                size="small"
-                variant="text"
-                href="https://www.facebook.com/people/Hardal/100039949007340/"
-                target="_blank"
-              >
+              <VBtn icon size="small" variant="text" href="" target="_blank">
                 <VIcon icon="mdi-facebook" />
               </VBtn>
 
-              <VBtn
-                icon
-                size="small"
-                variant="text"
-                href="https://www.twitter.com/hardalcafe"
-                target="_blank"
-              >
+              <VBtn icon size="small" variant="text" href="" target="_blank">
                 <VIcon icon="mdi-twitter" />
               </VBtn>
             </div>
