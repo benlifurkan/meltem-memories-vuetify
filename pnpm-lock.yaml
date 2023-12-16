@@ -26,6 +26,9 @@ dependencies:
   eos-icons-vue3:
     specifier: 1.1.0
     version: 1.1.0(typescript@5.3.3)
+  git:
+    specifier: ^0.1.5
+    version: 0.1.5
   qrcode:
     specifier: ^1.5.3
     version: 1.5.3
@@ -1368,6 +1371,13 @@ packages:
     engines: {node: 6.* || 8.* || >= 10.*}
     dev: false
 
+  /git@0.1.5:
+    resolution: {integrity: sha512-N+bfOrXyKMU/fQtCj6D/U9MQOEN0DAA8TLHSLdUQRSWBOkeRvsjJHdrdkvcq05xO7GSDKWc3nDEGoTZ4DfCCSg==}
+    engines: {node: '>=0.4.0'}
+    dependencies:
+      mime: 1.2.9
+    dev: false
+
   /glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -1617,6 +1627,10 @@ packages:
     engines: {node: '>= 0.6'}
     dependencies:
       mime-db: 1.52.0
+    dev: false
+
+  /mime@1.2.9:
+    resolution: {integrity: sha512-WiLgbHTIq5AYUvU/Luli4mZ1bUcHpGNHyCsbl+KPMg4zt+XUDpQehWjuBjdLaEvDTinvKj/FgfQt3fPoT7j08g==}
     dev: false
 
   /minimatch@3.1.2:
