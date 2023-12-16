@@ -33,7 +33,7 @@ onMounted(() => {
 
         <div class="d-flex align-center">
           <VBtn to="/" class="mr-2"> Ana Sayfa </VBtn>
-          <VBtn to="/contact"> İletişim </VBtn>
+          <VBtn to="/moments"> Anılarımız </VBtn>
         </div>
 
         <template #append>
@@ -44,34 +44,43 @@ onMounted(() => {
             variant="tonal"
             color="primary"
             class="ml-2"
+            target="_blank"
           >
             <VIcon icon="mdi-phone" />
           </VBtn>
-
           <VBtn
-            v-if="!authStore.isLoggedIn"
             icon
-            to="/panel/login"
+            href="https://www.instagram.com/furkanbenli.dev/"
             size="small"
             variant="tonal"
             color="primary"
             class="ml-2"
+            target="_blank"
           >
-            <VIcon icon="mdi-login" />
+            <VIcon icon="mdi-instagram" />
           </VBtn>
-
-          <template v-else>
-            <VBtn
-              icon
-              to="/panel/logout"
-              size="small"
-              variant="tonal"
-              color="error"
-              class="ml-2"
-            >
-              <VIcon icon="mdi-logout" />
-            </VBtn>
-          </template>
+          <VBtn
+            icon
+            href="https://twitter.com/furkanbenli_dev"
+            size="small"
+            variant="tonal"
+            color="primary"
+            class="ml-2"
+            target="_blank"
+          >
+            <VIcon icon="mdi-twitter" />
+          </VBtn>
+          <VBtn
+            icon
+            href="https://github.com/benlifurkan"
+            size="small"
+            variant="tonal"
+            color="primary"
+            class="ml-2"
+            target="_blank"
+          >
+            <VIcon icon="mdi-github" />
+          </VBtn>
         </template>
       </VAppBar>
 
@@ -155,20 +164,48 @@ onMounted(() => {
             class="d-flex flex-wrap align-center justify-md-space-between justify-center"
           >
             <span class="d-block mt-4" style="color: #6b7280">
-              © {{ new Date().getFullYear() }} - Tüm hakları saklıdır - KanKa
+              © {{ new Date().getFullYear() }} - Tüm hakları saklıdır - Furkan
+              Benli
             </span>
 
             <div class="d-flex align-center gap-4 mt-4">
-              <VBtn icon size="small" variant="text" href="" target="_blank">
+              <VBtn
+                icon
+                href="tel:05382238288"
+                size="small"
+                variant="text"
+                target="_blank"
+              >
+                <VIcon icon="mdi-phone" />
+              </VBtn>
+              <VBtn
+                icon
+                size="small"
+                variant="text"
+                href="https://instagram.com/furkanbenli.dev/"
+                target="_blank"
+              >
                 <VIcon icon="mdi-instagram" />
               </VBtn>
 
-              <VBtn icon size="small" variant="text" href="" target="_blank">
-                <VIcon icon="mdi-facebook" />
+              <VBtn
+                icon
+                size="small"
+                variant="text"
+                href="https://twitter.com/furkanbenli_dev"
+                target="_blank"
+              >
+                <VIcon icon="mdi-twitter" />
               </VBtn>
 
-              <VBtn icon size="small" variant="text" href="" target="_blank">
-                <VIcon icon="mdi-twitter" />
+              <VBtn
+                icon
+                size="small"
+                variant="text"
+                href="https://github.com/benlifurkan"
+                target="_blank"
+              >
+                <VIcon icon="mdi-github" />
               </VBtn>
             </div>
           </div>

@@ -7,11 +7,16 @@ import { s } from "unplugin-vue-router/dist/defineLoader-bde635fd";
 import { time } from "console";
 
 const images = [
-  "kanka_1.jpg",
-  "kanka_2.jpg",
-  "kanka_3.jpg",
-  "kanka_4.jpg",
-  "kanka_5.jpg",
+  "meltem-1.jpg",
+  "meltem-2.jpg",
+  "meltem-3.jpg",
+  "meltem-4.jpg",
+  "meltem-5.jpg",
+  "meltem-6.jpg",
+  "meltem-7.jpg",
+  "meltem-8.jpg",
+  "meltem-9.jpg",
+  "meltem-10.jpg",
 ];
 </script>
 
