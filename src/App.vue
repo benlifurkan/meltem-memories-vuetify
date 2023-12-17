@@ -27,7 +27,7 @@ onMounted(() => {
             variant="tonal"
             class="rounded-xl"
           >
-            <span class="text-xs">Geçmiş Olsun Bal Eşim</span>
+            <span class="text-xs">Seni Çok Seviyorum Bal Eşim</span>
           </VBtn>
         </template>
 
