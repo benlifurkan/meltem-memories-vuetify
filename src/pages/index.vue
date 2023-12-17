@@ -26,7 +26,6 @@ const images = [
       <VCarousel
         cycle
         hide-delimiter-background
-        show-arrows="hover"
         class="rounded-lg"
         :height="$vuetify.display.smAndDown ? 200 : 475"
         color="white"
