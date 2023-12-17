@@ -91,8 +91,8 @@ onMounted(() => {
             class="text-white bg-error px-4 py-2 rounded-xl sm text-decoration-none"
             variant="accent"
           >
-            <VIcon icon="mdi-needle" class="mr-2" />
-            <span class="text-xs">KanKa</span>
+            <VIcon icon="mdi-heart" class="mr-2" />
+            <span class="text-xs">Seni Çok Seviyorum Bal Eşim</span>
           </RouterLink>
         </template>
 
@@ -105,16 +105,11 @@ onMounted(() => {
 
       <VNavigationDrawer v-model="sidebar" temporary floating>
         <VList>
-          <VListItem
-            prepend-icon="mdi-home"
-            title="Kan Bağışı Takibi"
-            to="/"
-            link
-          />
+          <VListItem prepend-icon="mdi-home" title="Ana Sayfa" to="/" link />
           <VListItem
             prepend-icon="mdi-image-album"
-            to="/panel"
-            title="Bağış Merkezi"
+            to="/moments"
+            title="Anılarımız"
           />
         </VList>
       </VNavigationDrawer>
