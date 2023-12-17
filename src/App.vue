@@ -106,42 +106,16 @@ onMounted(() => {
       <VNavigationDrawer v-model="sidebar" temporary floating>
         <VList>
           <VListItem
-            prepend-icon="mdi-blood-bag"
+            prepend-icon="mdi-home"
             title="Kan Bağışı Takibi"
             to="/"
             link
           />
           <VListItem
-            prepend-icon="mdi-needle"
+            prepend-icon="mdi-image-album"
             to="/panel"
             title="Bağış Merkezi"
           />
-          <VListItem
-            prepend-icon="mdi-format-list-checks"
-            to="/panel"
-            title="Bağış Talepleri"
-          />
-          <VListItem
-            prepend-icon="mdi-phone"
-            title="İletişim"
-            to="/contact"
-            link
-          />
-
-          <VListItem
-            v-if="!authStore.isLoggedIn"
-            prepend-icon="mdi-login"
-            to="/panel/login"
-            title="Giriş Yap"
-          />
-
-          <template v-else>
-            <VListItem
-              prepend-icon="mdi-logout"
-              to="/panel/logout"
-              title="Çıkış Yap"
-            />
-          </template>
         </VList>
       </VNavigationDrawer>
 
