@@ -18,7 +18,7 @@ export default {
 <template>
   <v-container>
     <v-row justify="space-around">
-      <v-card width="200">
+      <v-card class="mb-12" width="200">
         <v-img
           height="200"
           src="https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg"
@@ -58,7 +58,7 @@ export default {
         </v-card-text>
       </v-card>
 
-      <v-card width="200">
+      <v-card class="mb-12" width="200">
         <v-img
           height="200"
           src="https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg"
@@ -98,7 +98,7 @@ export default {
         </v-card-text>
       </v-card>
 
-      <v-card width="200">
+      <v-card class="mb-12" width="200">
         <v-img
           height="200"
           src="https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg"
