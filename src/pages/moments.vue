@@ -1,74 +1,142 @@
-<script lang="ts" setup>
-import { useFetch } from "@vueuse/core";
-import { computed } from "vue";
-import slugify from "slugify";
+<script lang="ts">
+import { Toaster } from "vue-sonner";
+import { authStore } from "@/store/auth";
+import { ref, onMounted } from "vue";
 
-const images = ["bize-ulasin.jpg"];
+export default {
+  data: () => ({
+    messages: [
+      {
+        time: "10:42am",
+        color: "deep-purple-lighten-1",
+      },
+    ],
+  }),
+};
 </script>
 
 <template>
-  <VRow>
-    <div
-      class="mt-10"
-      style="
-        width: 100%;
-        height: 100%;
-        border: solid 2px black;
-        border-radius: 20px;
-        box-shadow: 0px 8px 8px #e61000;
-      "
-    >
-      <VImg
-        style="width: 100%; height: 100%; border-radius: 17px"
-        :src="`/contact-image/${images}`"
-      ></VImg>
-    </div>
-    <VCol cols="12">
-      <VRow style="width: 100%" class="mt-13 ml-1" align="center">
-        <VCol cols="12" class="d-flex justify-space-between">
-          <VBtn
-            target="_blank"
-            icon
-            href="tel:05382238288"
-            size="x-large"
-            variant="tonal"
-            color="#e61000"
-          >
-            <VIcon icon="mdi-phone" />
-          </VBtn>
-          <VBtn
-            target="_blank"
-            icon
-            href="https://www.instagram.com/hardalburger/"
-            size="x-large"
-            variant="tonal"
-            color="#e61000"
-          >
-            <VIcon icon="mdi-instagram" />
-          </VBtn>
-          <VBtn
-            target="_blank"
-            icon
-            href="https://www.facebook.com/people/Hardal/100039949007340/"
-            size="x-large"
-            variant="tonal"
-            color="#e61000"
-          >
-            <VIcon icon="mdi-facebook" />
-          </VBtn>
+  <v-container>
+    <v-row justify="space-around">
+      <v-card width="200">
+        <v-img
+          height="200"
+          src="https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg"
+          cover
+          class="text-white"
+        >
+          <!-- <v-toolbar color="rgba(0, 0, 0, 0)" theme="dark">
+            <template v-slot:prepend>
+              <v-btn icon="$menu"></v-btn>
+            </template>
 
-          <VBtn
-            target="_blank"
-            icon
-            href="https://twitter.com/hardalburger"
-            size="x-large"
-            variant="tonal"
-            color="#e61000"
-          >
-            <VIcon icon="mdi-twitter" />
-          </VBtn>
-        </VCol>
-      </VRow>
-    </VCol>
-  </VRow>
+            <v-toolbar-title class="text-h6"> Messages </v-toolbar-title>
+
+            <template v-slot:append>
+              <v-btn icon="mdi-dots-vertical"></v-btn>
+            </template>
+          </v-toolbar> -->
+        </v-img>
+
+        <v-card-text>
+          <div class="font-weight-bold ms-1 mb-2">Today</div>
+
+          <v-timeline density="compact" align="start">
+            <v-timeline-item
+              v-for="message in messages"
+              :key="message.time"
+              :dot-color="message.color"
+              size="sm"
+            >
+              <div class="mb-4">
+                <div class="font-weight-normal">
+                  <strong>{{ message.time }} </strong>
+                </div>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card-text>
+      </v-card>
+
+      <v-card width="200">
+        <v-img
+          height="200"
+          src="https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg"
+          cover
+          class="text-white"
+        >
+          <!-- <v-toolbar color="rgba(0, 0, 0, 0)" theme="dark">
+            <template v-slot:prepend>
+              <v-btn icon="$menu"></v-btn>
+            </template>
+
+            <v-toolbar-title class="text-h6"> Messages </v-toolbar-title>
+
+            <template v-slot:append>
+              <v-btn icon="mdi-dots-vertical"></v-btn>
+            </template>
+          </v-toolbar> -->
+        </v-img>
+
+        <v-card-text>
+          <div class="font-weight-bold ms-1 mb-2">Today</div>
+
+          <v-timeline density="compact" align="start">
+            <v-timeline-item
+              v-for="message in messages"
+              :key="message.time"
+              :dot-color="message.color"
+              size="sm"
+            >
+              <div class="mb-4">
+                <div class="font-weight-normal">
+                  <strong>{{ message.time }} </strong>
+                </div>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card-text>
+      </v-card>
+
+      <v-card width="200">
+        <v-img
+          height="200"
+          src="https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg"
+          cover
+          class="text-white"
+        >
+          <!-- <v-toolbar color="rgba(0, 0, 0, 0)" theme="dark">
+            <template v-slot:prepend>
+              <v-btn icon="$menu"></v-btn>
+            </template>
+
+            <v-toolbar-title class="text-h6"> Messages </v-toolbar-title>
+
+            <template v-slot:append>
+              <v-btn icon="mdi-dots-vertical"></v-btn>
+            </template>
+          </v-toolbar> -->
+        </v-img>
+
+        <v-card-text>
+          <div class="font-weight-bold ms-1 mb-2">Today</div>
+
+          <v-timeline density="compact" align="start">
+            <v-timeline-item
+              v-for="message in messages"
+              :key="message.time"
+              :dot-color="message.color"
+              size="sm"
+            >
+              <div class="mb-4">
+                <div class="font-weight-normal">
+                  <strong>{{ message.time }} </strong>
+                </div>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card-text>
+      </v-card>
+    </v-row>
+  </v-container>
 </template>

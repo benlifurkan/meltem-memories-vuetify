@@ -1,18 +1,9 @@
 <script lang="ts" setup>
-import { useQRCode } from "@vueuse/integrations/useQRCode";
 import { Toaster } from "vue-sonner";
 import { authStore } from "@/store/auth";
 import { ref, onMounted } from "vue";
 
 const sidebar = ref(false);
-const link = ref("");
-const qrCode = useQRCode(link, {
-  margin: 0,
-});
-
-onMounted(() => {
-  link.value = location.origin;
-});
 </script>
 
 <template>
