@@ -7,22 +7,9 @@ export default {
   data: () => ({
     messages: [
       {
-        from: "You",
-        message: `Sure, I'll see you later.`,
-        time: "10:42am",
-        color: "deep-purple-lighten-1",
-      },
-      {
-        from: "John Doe",
-        message: "Yeah, sure. Does 1:00pm work?",
-        time: "10:37am",
-        color: "green",
-      },
-      {
-        from: "You",
-        message: "Did you still want to grab lunch today?",
-        time: "9:47am",
-        color: "deep-purple-lighten-1",
+        time: "07:06am",
+        message: `O gece seninle sabaha kadar film izleyip sohbet ettik. Kolyenin fotoğrafını çekmek için izin istedim ve sen de kabul ettin. O geceden kalan tek fotoğraf bu.`,
+        color: "green-lighten-1",
       },
     ],
   }),
@@ -32,28 +19,28 @@ export default {
 <template>
   <v-container>
     <v-row justify="space-around">
-      <v-card width="400">
+      <v-card width="200" height="500px">
         <v-img
-          height="200"
-          src="public/moments/hello-kitty.png"
+          height="175"
+          src="/public/moments/hello-kitty.png"
           cover
           class="text-white"
         >
         </v-img>
 
         <v-card-text>
-          <div class="font-weight-bold ms-1 mb-2">7 Mayıs 2023</div>
+          <div class="font-weight-bold mb-2">7 Mayıs 2023</div>
 
-          <v-timeline density="compact" align="start">
+          <v-timeline density="compact" align="center">
             <v-timeline-item
               v-for="message in messages"
               :key="message.time"
               :dot-color="message.color"
-              size="x-small"
+              size="15"
             >
-              <div class="mb-4">
-                <div class="font-weight-normal">
-                  <strong>{{ message.from }}</strong> @{{ message.time }}
+              <div class="mt-2">
+                <div class="font-weight-bold mb-2">
+                  <strong>@{{ message.time }}</strong>
                 </div>
                 <div>{{ message.message }}</div>
               </div>
