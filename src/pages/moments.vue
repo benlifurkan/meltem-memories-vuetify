@@ -22,7 +22,7 @@ export default {
       <v-card width="200" height="500px">
         <v-img
           height="175"
-          src="/public/moments/hello-kitty.png"
+          src="/public/moments/card-image-1.png"
           cover
           class="text-white"
         >
