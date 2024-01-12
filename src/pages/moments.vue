@@ -27,7 +27,7 @@ export default {
 <template>
   <v-container>
     <v-row justify="space-around">
-      <v-card width="200" height="500px">
+      <v-card class="mb-8" width="200" height="500px">
         <v-img
           height="175"
           src="/public/moments/card-image-1.png"
@@ -57,7 +57,7 @@ export default {
         </v-card-text>
       </v-card>
 
-      <v-card width="200" height="500px">
+      <v-card class="mb-8" width="200" height="500px">
         <v-img
           height="175"
           src="/public/moments/card-image-2.png"
