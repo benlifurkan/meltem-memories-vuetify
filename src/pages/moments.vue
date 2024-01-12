@@ -35,7 +35,7 @@ export default {
       <v-card width="400">
         <v-img
           height="200"
-          src="https://cdn.discordapp.com/attachments/1175828283598848000/1193350390356394024/hello-kity-kolye.jpg?ex=65ac6528&is=6599f028&hm=fe6df89ab5769ba26ab4c69c13e049d3a15a715a885666a146a632040bbdce5e&"
+          src="public/moments/hello-kitty.png"
           cover
           class="text-white"
         >
