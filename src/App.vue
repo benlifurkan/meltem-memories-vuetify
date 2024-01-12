@@ -131,7 +131,7 @@ const sidebar = ref(false);
             <div class="d-flex align-center gap-4 mt-4">
               <VBtn
                 icon
-                href="tel:05382238288"
+                href="tel:05360587136"
                 size="small"
                 variant="text"
                 target="_blank"
