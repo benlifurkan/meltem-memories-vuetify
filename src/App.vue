@@ -119,7 +119,7 @@ function toggleTheme() {
           />
           <VListItem
             @click="toggleTheme"
-            prepend-icon="mdi--moon-waning-crescent"
+            prepend-icon="mdi-moon-waning-crescent"
             title="Tema Değiştir"
           />
         </VList>
