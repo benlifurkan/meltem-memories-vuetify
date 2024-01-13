@@ -26,7 +26,7 @@ function toggleTheme() {
             variant="tonal"
             class="rounded-xl"
           >
-            <span class="text-xs">Seni Çok Seviyorum Bal Eşim</span>
+            <span class="text-xs">Meltem Moments</span>
           </VBtn>
         </template>
 
@@ -98,7 +98,7 @@ function toggleTheme() {
             variant="accent"
           >
             <VIcon icon="mdi-heart" class="mr-2" />
-            <span class="text-xs">Seni Çok Seviyorum Bal Eşim</span>
+            <span class="text-xs">Meltem Moments</span>
           </RouterLink>
         </template>
 
