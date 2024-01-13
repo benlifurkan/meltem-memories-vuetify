@@ -30,7 +30,7 @@ export default {
       <v-card class="mb-8" width="200" height="500px">
         <v-img
           height="175"
-          src="/public/moments/card-image-1.png"
+          src="/moments/card-image-1.png"
           cover
           class="text-white"
         >
@@ -60,7 +60,7 @@ export default {
       <v-card class="mb-8" width="200" height="500px">
         <v-img
           height="175"
-          src="/public/moments/card-image-2.png"
+          src="/moments/card-image-2.png"
           cover
           class="text-white"
         >
