@@ -114,11 +114,11 @@ export default {
               :dot-color="message.color"
               size="12"
             >
-              <div class="mt-2">
+              <div class="">
                 <div class="font-weight-bold mb-2">
                   <strong>@{{ message.time }}</strong>
                 </div>
-                <div class="mb-2">{{ message.message }}</div>
+                <div class="">{{ message.message }}</div>
               </div>
             </v-timeline-item>
           </v-timeline>
