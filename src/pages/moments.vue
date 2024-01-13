@@ -20,6 +20,14 @@ export default {
         color: "purple-lighten-1",
       },
     ],
+
+    messages_3: [
+      {
+        time: "17:13pm",
+        message: `Senden kilometrelerce uzakta olmama rağmen, doğum günün için güzel bir şeyler yapmam gerekiyordu. Bu yüzden sana hayatın boyunca unutamayacağın bir sürpriz hazırladım. İlk defa birinin doğum günü için bu kadar çaba sarfettim.`,
+        color: "yellow-lighten-1",
+      },
+    ],
   }),
 };
 </script>
@@ -27,7 +35,7 @@ export default {
 <template>
   <v-container>
     <v-row justify="space-around">
-      <v-card class="mb-8" width="200" height="500px">
+      <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
           src="/moments/card-image-1.png"
@@ -57,7 +65,7 @@ export default {
         </v-card-text>
       </v-card>
 
-      <v-card class="mb-8" width="200" height="500px">
+      <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
           src="/moments/card-image-2.png"
@@ -72,6 +80,36 @@ export default {
           <v-timeline density="compact" align="center">
             <v-timeline-item
               v-for="message in messages_2"
+              :key="message.time"
+              :dot-color="message.color"
+              size="12"
+            >
+              <div class="mt-2">
+                <div class="font-weight-bold mb-2">
+                  <strong>@{{ message.time }}</strong>
+                </div>
+                <div class="mb-2">{{ message.message }}</div>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card-text>
+      </v-card>
+
+      <v-card class="mb-8" width="250" height="500px">
+        <v-img
+          height="175"
+          src="/moments/card-image-3.png"
+          cover
+          class="text-white"
+        >
+        </v-img>
+
+        <v-card-text>
+          <div class="font-weight-bold mb-2">17 Mayıs 2023</div>
+
+          <v-timeline density="compact" align="center">
+            <v-timeline-item
+              v-for="message in messages_3"
               :key="message.time"
               :dot-color="message.color"
               size="12"
