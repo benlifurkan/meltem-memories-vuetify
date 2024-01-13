@@ -4,6 +4,14 @@ import { authStore } from "@/store/auth";
 import { ref, onMounted } from "vue";
 
 const sidebar = ref(false);
+
+import { useTheme } from "vuetify";
+
+const theme = useTheme();
+
+function toggleTheme() {
+  theme.global.name.value = theme.global.current.value.dark ? "light" : "dark";
+}
 </script>
 
 <template>
@@ -28,7 +36,14 @@ const sidebar = ref(false);
         </div>
 
         <template #append>
-          <VBtn
+          <v-btn
+            @click="toggleTheme"
+            prepend-icon="mdi-moon-waning-crescent"
+            variant="tonal"
+          >
+            Tema Değiştir
+          </v-btn>
+          <!-- <VBtn
             icon
             href="tel:05382238288"
             size="small"
@@ -71,7 +86,7 @@ const sidebar = ref(false);
             target="_blank"
           >
             <VIcon icon="mdi-github" />
-          </VBtn>
+          </VBtn> -->
         </template>
       </VAppBar>
 
@@ -101,6 +116,11 @@ const sidebar = ref(false);
             prepend-icon="mdi-image-album"
             to="/moments"
             title="Anılarımız"
+          />
+          <VListItem
+            @click="toggleTheme"
+            prepend-icon="mdi--moon-waning-crescent"
+            title="Tema Değiştir"
           />
         </VList>
       </VNavigationDrawer>
