@@ -93,7 +93,7 @@ function toggleTheme() {
         <template #prepend>
           <RouterLink
             to="/"
-            class="px-4 py-4 rounded-xl sm text-decoration-none"
+            class="px-4 pt-2 py-4 rounded-xl sm text-decoration-none"
             :class="{
               btn: true,
               'dark text-white': theme.current.value.dark,
@@ -101,7 +101,7 @@ function toggleTheme() {
             }"
             variant="accent"
           >
-            <VIcon icon="mdi-heart" class="mr-2" />
+            <VIcon icon="mdi-heart" class="mr-2 color-red" />
             <span class="text-xs">Meltem Moments</span>
           </RouterLink>
         </template>
