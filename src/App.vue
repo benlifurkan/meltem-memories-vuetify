@@ -93,12 +93,12 @@ function toggleTheme() {
         <template #prepend>
           <RouterLink
             to="/"
-            class="px-4 pt-2 py-4 rounded-xl sm text-decoration-none"
+            class="px-4 pt-2 rounded-xl sm text-decoration-none"
             variant="accent"
           >
             <VIcon icon="mdi-heart" class="mr-2 text-red" />
             <span
-              class="text-xs mt-2 mp-10"
+              class="text-xs d-flex mt-2 mp-10"
               :class="{
                 btn: true,
                 'dark text-white': theme.current.value.dark,
