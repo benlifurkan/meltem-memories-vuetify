@@ -23,7 +23,6 @@ function toggleTheme() {
             to="/"
             prepend-icon="mdi-heart"
             color="error"
-            variant="tonal"
             class="rounded-xl"
           >
             <span class="text-xs">Meltem Moments</span>
