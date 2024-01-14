@@ -54,7 +54,7 @@ export default {
       <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
-          src="/moments/card-image-1.png"
+          src="/memories/card-image-1.png"
           cover
           class="text-white"
         >
@@ -84,7 +84,7 @@ export default {
       <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
-          src="/moments/card-image-2.png"
+          src="/memories/card-image-2.png"
           cover
           class="text-white"
         >
@@ -114,7 +114,7 @@ export default {
       <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
-          src="/moments/card-image-3.png"
+          src="/memories/card-image-3.png"
           cover
           class="text-white"
         >
@@ -144,7 +144,7 @@ export default {
       <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
-          src="/moments/card-image-4.png"
+          src="/memories/card-image-4.png"
           cover
           class="text-white"
         >
@@ -176,7 +176,7 @@ export default {
       <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
-          src="/moments/card-image-5.png"
+          src="/memories/card-image-5.png"
           cover
           class="text-white"
         >
@@ -206,7 +206,7 @@ export default {
       <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
-          src="/moments/card-image-2.png"
+          src="/memories/card-image-2.png"
           cover
           class="text-white"
         >
@@ -236,7 +236,7 @@ export default {
       <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
-          src="/moments/card-image-3.png"
+          src="/memories/card-image-3.png"
           cover
           class="text-white"
         >
@@ -266,7 +266,7 @@ export default {
       <v-card class="mb-8" width="250" height="500px">
         <v-img
           height="175"
-          src="/moments/card-image-4.png"
+          src="/memories/card-image-4.png"
           cover
           class="text-white"
         >
