@@ -53,9 +53,29 @@ export default {
     messages_6: [
       {
         location: "ANKAmall AVM Yenimahalle/Ankara",
-        time: "17:53pm",
-        message: `Uzun bir uzak mesafe ilişkisinden sonra o gün seninle ilk kez buluştuk. Sana sarılmayı, kokunu içime çekmeyi, ellerini tutmayı çok özlediğimi iliklerime kadar hissetmiştim. Uzun bir ayrılıktan sonra seni tekrar görmek bana çok iyi geldi. `,
+        time: "16:15pm",
+        message: `O gün seninle ilk defa bir AVM'ye gittik, kahve içip sohbet ettik. Seninle zamanın çok çabuk geçtiği yetmezmiş gibi bir de güzel gözlerinin içinde kaybolup gitmiştim. Benim için çok güzel bir gündü.`,
         color: "blue-lighten-1",
+      },
+    ],
+
+    messages_7: [
+      {
+        location: "Recep Tayyip Erdoğan Parkı Pursaklar/Ankara",
+        time: "00:14am",
+        message:
+          "O gün seninle gecenin bir yarısı bir parka gidip oturduk. Dakikalarca dizlerime yatıp ağladın. Birinin ağlaması hiç bu kadar canımı acıtmamıştı. Ne kadar üzücü bir gece olsa da ikimiz de bir o kadar mutluyduk. Bu gece bizim ilk öpüştüğümüz geceydi.",
+        color: "green-lighten-1",
+      },
+    ],
+
+    messages_8: [
+      {
+        location: "AŞTİ Otogarı Yenimahalle/Ankara",
+        time: "18:02pm",
+        message:
+          "Mükemmel geçen iki günden sonra senden ayrılmanın vakti gelip çattı. Seni asla bırakmak istemesem de dönmek zorundayım. Sana son kez sarılmak canımı çok yakıyor. Umarım bir gün hep yan yana oluruz. Kendine iyi bak sevgilim. Seni çok özleyeceğim.",
+        color: "green-lighten-1",
       },
     ],
   }),
@@ -310,18 +330,18 @@ export default {
       <v-card class="mb-8" width="250" height="550px">
         <v-img
           height="175"
-          src="/memories/card-image-3.png"
+          src="/memories/card-image-7.png"
           cover
           class="text-white"
         >
         </v-img>
 
         <v-card-text>
-          <div class="font-weight-bold mb-2">7 Mayıs 2023</div>
+          <div class="font-weight-bold mb-2">11 Haziran 2023</div>
 
           <v-timeline density="compact" align="center">
             <v-timeline-item
-              v-for="message in messages_6"
+              v-for="message in messages_7"
               :key="message.time"
               :location="message.location"
               :dot-color="message.color"
@@ -350,18 +370,18 @@ export default {
       <v-card class="mb-8" width="250" height="550px">
         <v-img
           height="175"
-          src="/memories/card-image-4.png"
+          src="/memories/card-image-8.png"
           cover
           class="text-white"
         >
         </v-img>
 
         <v-card-text>
-          <div class="font-weight-bold mb-2">17 Mayıs 2023</div>
+          <div class="font-weight-bold mb-2">11 Haziran 2023</div>
 
           <v-timeline density="compact" align="center">
             <v-timeline-item
-              v-for="message in messages_1"
+              v-for="message in messages_8"
               :key="message.time"
               :location="message.location"
               :dot-color="message.color"
