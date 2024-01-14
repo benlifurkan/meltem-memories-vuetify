@@ -93,6 +93,7 @@ function toggleTheme() {
         <template #prepend>
           <RouterLink
             to="/"
+            class="px-4 py-2 rounded-xl sm text-decoration-none"
             :class="{
               btn: true,
               'dark text-white': theme.current.value.dark,
