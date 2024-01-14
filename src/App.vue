@@ -92,18 +92,12 @@ function toggleTheme() {
       <VAppBar v-else flat border>
         <template #prepend>
           <RouterLink
-            v-if="theme.global.current.value.dark"
             to="/"
-            class="text-white px-4 py-2 rounded-xl sm text-decoration-none"
-            variant="accent"
-          >
-            <VIcon icon="mdi-heart" class="mr-2" />
-            <span class="text-xs">Meltem Moments</span>
-          </RouterLink>
-          <RouterLink
-            v-else
-            to="/"
-            class="text-black px-4 py-2 rounded-xl sm text-decoration-none"
+            :class="{
+              btn: true,
+              'dark text-white': theme.current.value.dark,
+              'light text-black': theme.global.name.value,
+            }"
             variant="accent"
           >
             <VIcon icon="mdi-heart" class="mr-2" />
