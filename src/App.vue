@@ -24,6 +24,7 @@ function toggleTheme() {
             prepend-icon="mdi-heart"
             color="error"
             class="rounded-xl"
+            variant="tonal"
           >
             <span class="text-xs">Meltem's Memorıes</span>
           </VBtn>
@@ -39,74 +40,31 @@ function toggleTheme() {
             @click="toggleTheme"
             prepend-icon="mdi-moon-waning-crescent"
             variant="tonal"
+            class="rounded-xl"
           >
             Tema Değiştir
           </v-btn>
-          <!-- <VBtn
-            icon
-            href="tel:05382238288"
-            size="small"
-            variant="tonal"
-            color="primary"
-            class="ml-2"
-            target="_blank"
-          >
-            <VIcon icon="mdi-phone" />
-          </VBtn>
-          <VBtn
-            icon
-            href="https://www.instagram.com/furkanbenli.dev/"
-            size="small"
-            variant="tonal"
-            color="primary"
-            class="ml-2"
-            target="_blank"
-          >
-            <VIcon icon="mdi-instagram" />
-          </VBtn>
-          <VBtn
-            icon
-            href="https://twitter.com/furkanbenli_dev"
-            size="small"
-            variant="tonal"
-            color="primary"
-            class="ml-2"
-            target="_blank"
-          >
-            <VIcon icon="mdi-twitter" />
-          </VBtn>
-          <VBtn
-            icon
-            href="https://github.com/benlifurkan"
-            size="small"
-            variant="tonal"
-            color="primary"
-            class="ml-2"
-            target="_blank"
-          >
-            <VIcon icon="mdi-github" />
-          </VBtn> -->
         </template>
       </VAppBar>
 
       <VAppBar v-else flat border>
         <template #prepend>
-          <RouterLink
+          <VBtn
             to="/"
-            class="px-4 pt-2 rounded-xl sm text-decoration-none align-center"
-            variant="accent"
+            prepend-icon="mdi-heart"
+            color="error"
+            class="rounded-xl"
+            variant="tonal"
           >
-            <VIcon icon="mdi-heart" class="mr-2 text-xs text-red" />
             <span
-              class="text-xs d-inline-flex align-center"
+              class="text-xs"
               :class="{
                 'dark text-white': theme.current.value.dark,
                 'light text-black': !theme.current.value.dark,
               }"
+              >Meltem's Memorıes</span
             >
-              Meltem's Memories
-            </span>
-          </RouterLink>
+          </VBtn>
         </template>
 
         <template #append>
