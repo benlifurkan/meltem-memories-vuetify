@@ -96,7 +96,7 @@ function toggleTheme() {
             class="px-4 pt-2 rounded-xl sm text-decoration-none align-center"
             variant="accent"
           >
-            <VIcon icon="mdi-heart" class="mr-2 text-red" />
+            <VIcon icon="mdi-heart" class="mr-2 text-xs text-red" />
             <span
               class="text-xs d-inline-flex align-center"
               :class="{
