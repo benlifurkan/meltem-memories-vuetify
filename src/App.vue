@@ -101,7 +101,7 @@ function toggleTheme() {
             }"
             variant="accent"
           >
-            <VIcon icon="mdi-heart" class="mr-2 color-red" />
+            <VIcon icon="mdi-heart" class="mr-2 red" />
             <span class="text-xs mt-2 mp-10">Meltem's Memories</span>
           </RouterLink>
         </template>
