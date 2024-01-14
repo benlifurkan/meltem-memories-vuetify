@@ -25,13 +25,13 @@ function toggleTheme() {
             color="error"
             class="rounded-xl"
           >
-            <span class="text-xs">Meltem Moments</span>
+            <span class="text-xs">Meltem's Memorıes</span>
           </VBtn>
         </template>
 
         <div class="d-flex align-center">
           <VBtn to="/" class="mr-2"> Ana Sayfa </VBtn>
-          <VBtn to="/moments"> Anılarımız </VBtn>
+          <VBtn to="/memories"> Anılarımız </VBtn>
         </div>
 
         <template #append>
@@ -102,7 +102,7 @@ function toggleTheme() {
             variant="accent"
           >
             <VIcon icon="mdi-heart" class="mr-2 color-red" />
-            <span class="text-xs">Meltem Moments</span>
+            <span class="text-xs mt-2">Meltem's Memories</span>
           </RouterLink>
         </template>
 
@@ -118,7 +118,7 @@ function toggleTheme() {
           <VListItem prepend-icon="mdi-home" title="Ana Sayfa" to="/" link />
           <VListItem
             prepend-icon="mdi-image-album"
-            to="/moments"
+            to="/memories"
             title="Anılarımız"
           />
           <VListItem
