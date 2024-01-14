@@ -93,7 +93,7 @@ function toggleTheme() {
         <template #prepend>
           <RouterLink
             to="/"
-            class="text-white bg-error px-4 py-2 rounded-xl sm text-decoration-none"
+            class="text-white px-4 py-2 rounded-xl sm text-decoration-none"
             variant="accent"
           >
             <VIcon icon="mdi-heart" class="mr-2" />
