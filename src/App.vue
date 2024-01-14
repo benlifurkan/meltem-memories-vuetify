@@ -100,7 +100,6 @@ function toggleTheme() {
             <span
               class="text-xs d-inline-flex"
               :class="{
-                btn: true,
                 'dark text-white': theme.current.value.dark,
                 'light text-black': !theme.current.value.dark,
               }"
