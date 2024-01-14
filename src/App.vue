@@ -94,15 +94,19 @@ function toggleTheme() {
           <RouterLink
             to="/"
             class="px-4 pt-2 py-4 rounded-xl sm text-decoration-none"
-            :class="{
-              btn: true,
-              'dark text-white': theme.current.value.dark,
-              'light text-black': !theme.current.value.dark,
-            }"
             variant="accent"
           >
             <VIcon icon="mdi-heart" class="mr-2 red" />
-            <span class="text-xs mt-2 mp-10">Meltem's Memories</span>
+            <span
+              class="text-xs mt-2 mp-10"
+              :class="{
+                btn: true,
+                'dark text-white': theme.current.value.dark,
+                'light text-black': !theme.current.value.dark,
+              }"
+            >
+              Meltem's Memories
+            </span>
           </RouterLink>
         </template>
 
