@@ -97,7 +97,7 @@ function toggleTheme() {
             :class="{
               btn: true,
               'dark text-white': theme.current.value.dark,
-              'light text-black': theme.global.name.value,
+              'light text-black': !theme.current.value.dark,
             }"
             variant="accent"
           >
