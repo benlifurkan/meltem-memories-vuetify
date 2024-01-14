@@ -147,7 +147,7 @@ function toggleTheme() {
                 icon
                 size="small"
                 variant="text"
-                href="https://github.com/benlifurkan"
+                href="https://github.com/benlifurkan/meltem-memories-vuetify"
                 target="_blank"
               >
                 <VIcon icon="mdi-github" />
