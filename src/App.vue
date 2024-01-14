@@ -98,7 +98,7 @@ function toggleTheme() {
           >
             <VIcon icon="mdi-heart" class="mr-2 text-red" />
             <span
-              class="text-xs d-inline-flex"
+              class="text-xs align-center"
               :class="{
                 'dark text-white': theme.current.value.dark,
                 'light text-black': !theme.current.value.dark,
