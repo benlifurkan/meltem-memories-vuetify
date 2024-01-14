@@ -10,7 +10,7 @@ export default {
         location: "Akyazı/Sakarya",
         time: "18:42pm",
         message: `Saçlarının rüzgarda uçuşmasını, içtiğin sigaranın dumanını, güldüğün zaman gözlerinin kapanmasını, kahkahalarını, konuşurken yaptığın mimikleri, kısacası her şeyini ilk kez gördüğüm gün.`,
-        color: "green-lighten-1",
+        color: "blue-lighten-1",
       },
     ],
 
@@ -19,7 +19,7 @@ export default {
         location: "Akyazı/Sakarya",
         time: "07:06am",
         message: `O gece seninle sabaha kadar film izleyip sohbet ettik. Kolyenin fotoğrafını çekmek için izin istedim ve sen de kabul ettin. O geceden kalan tek fotoğraf bu.`,
-        color: "purple-lighten-1",
+        color: "blue-lighten-1",
       },
     ],
 
@@ -28,7 +28,7 @@ export default {
         location: "Akyazı/Sakarya",
         time: "15:40pm",
         message: `O gün seninle ilk kez bir parka gidip oturduk. Seninle ilk kez bir şeyler yaptık. Seninle ilk kez garip şeyler hissettik. Seni ilk kez öptüm. Bu hisler benim için çok yeniydi. Bu güzel hisleri ilk kez senin gibi mükemmel biriyle yaşadığım için çok şanslıyım.`,
-        color: "pink-lighten-1",
+        color: "blue-lighten-1",
       },
     ],
 
@@ -37,7 +37,7 @@ export default {
         location: "Akyazı/Sakarya",
         time: "17:13pm",
         message: `Senden kilometrelerce uzakta olmama rağmen, doğum günün için güzel bir şeyler yapmam gerekiyordu. Bu yüzden sana hayatın boyunca unutamayacağın bir sürpriz hazırladım. İlk defa birinin doğum günü için bu kadar çaba sarfettim.`,
-        color: "yellow-lighten-1",
+        color: "blue-lighten-1",
       },
     ],
 
@@ -46,7 +46,7 @@ export default {
         location: "Kahveci Hacıbaba Cafe Çankaya/Ankara",
         time: "17:53pm",
         message: `Uzun bir uzak mesafe ilişkisinden sonra o gün seninle ilk kez buluştuk. Sana sarılmayı, kokunu içime çekmeyi, ellerini tutmayı çok özlediğimi iliklerime kadar hissetmiştim. Uzun bir ayrılıktan sonra seni tekrar görmek bana çok iyi geldi. `,
-        color: "yellow-lighten-1",
+        color: "blue-lighten-1",
       },
     ],
 
@@ -65,7 +65,7 @@ export default {
         time: "00:14am",
         message:
           "O gün seninle gecenin bir yarısı bir parka gidip oturduk. Dakikalarca dizlerime yatıp ağladın. Birinin ağlaması hiç bu kadar canımı acıtmamıştı. Ne kadar üzücü bir gece olsa da ikimiz de bir o kadar mutluyduk. Bu gece bizim ilk öpüştüğümüz geceydi.",
-        color: "green-lighten-1",
+        color: "blue-lighten-1",
       },
     ],
 
@@ -75,7 +75,7 @@ export default {
         time: "18:02pm",
         message:
           "Mükemmel geçen iki günden sonra senden ayrılmanın vakti gelip çattı. Seni asla bırakmak istemesem de dönmek zorundayım. Sana son kez sarılmak canımı çok yakıyor. Umarım bir gün hep yan yana oluruz. Kendine iyi bak sevgilim. Seni çok özleyeceğim.",
-        color: "green-lighten-1",
+        color: "blue-lighten-1",
       },
     ],
   }),
