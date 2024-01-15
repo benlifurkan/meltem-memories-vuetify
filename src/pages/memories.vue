@@ -164,7 +164,7 @@ export default {
         location: "Pursaklar/Ankara",
         time: "14:12pm",
         message:
-          "Yine ayrılık vakti geldi çattı. Bu seferki ayrılık çok daha zor. Her defasında sana tam alışmışken geri dönmek zorunda kalmaktan nefret ediyorum. Daha önce de söylediğim gibi, umarım bir gün hep yan yana oluruz. Kendine iyi bak sevgilim. Seni çok özleyeceğim.",
+          "Sana harika bir dudak parlatıcısı aldım. Mutluluğun tarif edilemezdi. Bu dudak parlatıcısı en güzel günlerde hep dudaklarını parlatacak. Tıpkı senin benim hayatımı tam anlamıyla parlattığın gibi.",
         color: "blue-lighten-1",
       },
     ],
