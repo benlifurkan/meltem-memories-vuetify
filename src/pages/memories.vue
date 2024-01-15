@@ -108,6 +108,46 @@ export default {
         color: "blue-lighten-1",
       },
     ],
+
+    messages_12: [
+      {
+        location: "Akyazı/Sakarya",
+        time: "22:05pm",
+        message:
+          "Sen gittikten sonra hastaneden aldığım barkodu cüzdanımda sakladım. Yanımda sana dair şeyler taşımak beni mutlu ediyor. Özel anlarımızı hatırlamak için bu küçük detaylar yeterli oluyor. Seni ve sana dair her detayı çok seviyorum.",
+        color: "blue-lighten-1",
+      },
+    ],
+
+    messages_13: [
+      {
+        location: "Vega AVM Subayevleri Altındağ/Ankara",
+        time: "15:33pm",
+        message:
+          "Uzun bir ayrılığın ardından seninle tekrar buluştuk. Sen yanımdayken yediğim her yiyecek lezzetli, içtiğim her içecek nefismiş. Seninleyken çok şey öğrendim sevgilim, yapılan en basit aktiviteler bile çok özel anılara dönüşebilirmiş.",
+        color: "blue-lighten-1",
+      },
+    ],
+
+    messages_14: [
+      {
+        location: "Simit Sarayı Karanfil Çankaya/Ankara",
+        time: "17:40pm",
+        message:
+          "Hiç anlamamama rağmen sana gloss sürdüm. Bu an sana ne hissettirdi bilmiyorum ama bana çok özel hissettirdi. En güzel şekilde yapabilmek için biraz çaba sarfetmiştim. Umarım güzel olmuştur.",
+        color: "blue-lighten-1",
+      },
+    ],
+
+    messages_15: [
+      {
+        location: "Simit Sarayı Karanfil Çankaya/Ankara",
+        time: "17:59pm",
+        message:
+          "Seninle parmak güreşi oyunu oynadık. Bu oyunu oynarken bir şey öğrendim. Kaybedenin olmadığı oyunlar da varmış. Seninle oynadığım her oyun, kaybedeni olmayan bir oyunmuş.",
+        color: "blue-lighten-1",
+      },
+    ],
   }),
 };
 </script>
@@ -533,6 +573,167 @@ export default {
           <v-timeline density="compact" align="center">
             <v-timeline-item
               v-for="message in messages_11"
+              :key="message.time"
+              :location="message.location"
+              :dot-color="message.color"
+              size="12"
+            >
+              <div class="mt-0">
+                <div class="font-weight-normal font-italic mb-2">
+                  <VIcon
+                    icon="mdi-map-marker"
+                    class="mr-1 text-blue align-center rounded-xl"
+                  />
+                  <strong class="ml-0 text-xs pt-2 align-center">{{
+                    message.location
+                  }}</strong>
+                </div>
+                <div class="font-weight-bold mb-2">
+                  <strong>@{{ message.time }}</strong>
+                </div>
+                <div class="mb-2">{{ message.message }}</div>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card-text>
+      </v-card>
+
+      <v-card class="mb-8" width="250" height="550px">
+        <v-img
+          height="175"
+          src="/memories/card-image-12.png"
+          cover
+          class="text-white"
+        >
+        </v-img>
+
+        <v-card-text>
+          <div class="font-weight-bold mb-2">30 Temmuz 2023</div>
+
+          <v-timeline density="compact" align="center">
+            <v-timeline-item
+              v-for="message in messages_12"
+              :key="message.time"
+              :location="message.location"
+              :dot-color="message.color"
+              size="12"
+            >
+              <div class="mt-0">
+                <div class="font-weight-normal font-italic mb-2">
+                  <VIcon
+                    icon="mdi-map-marker"
+                    class="mr-1 text-blue align-center rounded-xl"
+                  />
+                  <strong class="ml-0 text-xs pt-2 align-center">{{
+                    message.location
+                  }}</strong>
+                </div>
+                <div class="font-weight-bold mb-2">
+                  <strong>@{{ message.time }}</strong>
+                </div>
+                <div class="mb-2">{{ message.message }}</div>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card-text>
+      </v-card>
+    </v-row>
+    <v-row justify="space-around">
+      <v-card class="mb-8" width="250" height="550px">
+        <v-img
+          height="175"
+          src="/memories/card-image-13.png"
+          cover
+          class="text-white"
+        >
+        </v-img>
+
+        <v-card-text>
+          <div class="font-weight-bold mb-2">8 Eylül 2023</div>
+
+          <v-timeline density="compact" align="center">
+            <v-timeline-item
+              v-for="message in messages_13"
+              :key="message.time"
+              :location="message.location"
+              :dot-color="message.color"
+              size="12"
+            >
+              <div class="mt-0">
+                <div class="font-weight-normal font-italic mb-2">
+                  <VIcon
+                    icon="mdi-map-marker"
+                    class="mr-1 text-blue align-center rounded-xl"
+                  />
+                  <strong class="ml-0 text-xs pt-2 align-center">{{
+                    message.location
+                  }}</strong>
+                </div>
+                <div class="font-weight-bold mb-2">
+                  <strong>@{{ message.time }}</strong>
+                </div>
+                <div class="mb-2">{{ message.message }}</div>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card-text>
+      </v-card>
+
+      <v-card class="mb-8" width="250" height="550px">
+        <v-img
+          height="175"
+          src="/memories/card-image-14.png"
+          cover
+          class="text-white"
+        >
+        </v-img>
+
+        <v-card-text>
+          <div class="font-weight-bold mb-2">8 Eylül 2023</div>
+
+          <v-timeline density="compact" align="center">
+            <v-timeline-item
+              v-for="message in messages_14"
+              :key="message.time"
+              :location="message.location"
+              :dot-color="message.color"
+              size="12"
+            >
+              <div class="mt-0">
+                <div class="font-weight-normal font-italic mb-2">
+                  <VIcon
+                    icon="mdi-map-marker"
+                    class="mr-1 text-blue align-center rounded-xl"
+                  />
+                  <strong class="ml-0 text-xs pt-2 align-center">{{
+                    message.location
+                  }}</strong>
+                </div>
+                <div class="font-weight-bold mb-2">
+                  <strong>@{{ message.time }}</strong>
+                </div>
+                <div class="mb-2">{{ message.message }}</div>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card-text>
+      </v-card>
+
+      <v-card class="mb-8" width="250" height="550px">
+        <v-img
+          height="175"
+          src="/memories/card-image-15.png"
+          cover
+          class="text-white"
+        >
+        </v-img>
+
+        <v-card-text>
+          <div class="font-weight-bold mb-2">8 Eylül 2023</div>
+
+          <v-timeline density="compact" align="center">
+            <v-timeline-item
+              v-for="message in messages_15"
               :key="message.time"
               :location="message.location"
               :dot-color="message.color"
