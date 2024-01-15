@@ -97,6 +97,7 @@ function toggleTheme() {
       </VMain>
 
       <VFooter
+        border
         style="margin-top: 120px; background-color: #f3f4f6"
         class="d-flex flex-column gap-4 bg-white"
       >
@@ -108,10 +109,16 @@ function toggleTheme() {
           <div
             class="d-flex flex-wrap align-center justify-md-space-between justify-center"
           >
-            <span class="d-block mt-4" style="color: #6b7280">
-              © {{ new Date().getFullYear() }} - Tüm hakları saklıdır - Furkan
-              Benli
-            </span>
+            <div class="d-flex-column">
+              <span class="d-block mt-4" style="color: #6b7280">
+                © {{ new Date().getFullYear() }} - Tüm hakları saklıdır - Furkan
+                Benli
+              </span>
+
+              <span class="d-block mt-4" style="color: #6b7280">
+                Bütün fotoğraflar yapay zeka ile oluşturulmuştur.
+              </span>
+            </div>
 
             <div class="d-flex align-center gap-4 mt-4">
               <VBtn
